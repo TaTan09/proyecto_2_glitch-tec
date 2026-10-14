@@ -1,6 +1,6 @@
 # Auditoría previa a la migración
 
-Base revisada: `main` en `2e3d9baf557ea3c0f9fda9fbccb56c949dfbd884`. Se revisaron ambos Compose, `.env.example`, `.gitignore`, Dockerfiles, nginx, fuentes/configuración de Vue, los cinco servicios Flask con sus modelos/requisitos, bootstrap SQL, schemas/seeds, README y documentación de backend/datos, antes de escribir los manifiestos.
+Base del Proyecto 1 revisada: commit `2e3d9baf557ea3c0f9fda9fbccb56c949dfbd884`. Se revisaron ambos Compose, `.env.example`, `.gitignore`, Dockerfiles, nginx, fuentes/configuración de Vue, los cinco servicios Flask con sus modelos/requisitos, bootstrap SQL, schemas/seeds, README y documentación de backend/datos, antes de escribir los manifiestos.
 
 ## Contratos confirmados
 
@@ -34,4 +34,4 @@ Base revisada: `main` en `2e3d9baf557ea3c0f9fda9fbccb56c949dfbd884`. Se revisaro
 
 ## Decisiones Kubernetes
 
-Ocho Deployments, una réplica inicial cada uno; PostgreSQL `Recreate`; 1Gi RWO `local-path`; ConfigMap proyectado que conserva `schema/` y `seeds/`; socket de bootstrap conservado; probes PostgreSQL por TCP para no aceptar su servidor temporal; espera TCP en los tres backends con BD; siete ClusterIP y dos entradas del gateway; LoadBalancer 8080 para evitar el 80 de Traefik; manifiestos finales versionados directamente desplegables para Glitch Tec, ID `glitch-tec` y namespace `proyecto-2-glitch-tec`; repositorio final previsto `proyecto_2_glitch-tec`. Las siete imágenes 2.0 están publicadas según confirmación del equipo; ningún Secret real está versionado y las pruebas de k3s siguen pendientes.
+Ocho Deployments, una réplica inicial cada uno; PostgreSQL `Recreate`; 1Gi RWO `local-path`; ConfigMap proyectado que conserva `schema/` y `seeds/`; socket de bootstrap conservado; probes PostgreSQL por TCP para no aceptar su servidor temporal; espera TCP en los tres backends con BD; siete ClusterIP y dos entradas del gateway; LoadBalancer 8080 para evitar el 80 de Traefik; manifiestos finales versionados directamente desplegables para Glitch Tec, ID `glitch-tec` y namespace `proyecto-2-glitch-tec`; repositorio final `TaTan09/proyecto_2_glitch-tec`, rama de entrega `main`. Las siete imágenes `javierini/elquetzal-*:2.0` están publicadas según confirmación del equipo; ningún Secret real está versionado y las pruebas de k3s siguen pendientes.

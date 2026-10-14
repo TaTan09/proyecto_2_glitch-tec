@@ -13,12 +13,12 @@ kubectl get storageclass
 
 El nodo debe estar Ready, el contexto debe ser el k3s de la VM y debe existir `local-path`. No continuar con otro clúster por accidente. Si el usuario no tiene acceso al kubeconfig, el responsable debe darle acceso local al kubeconfig de k3s; no copiarlo al repositorio ni a capturas.
 
-En la carpeta del repositorio existente:
+Si el repositorio final ya está clonado, desde su carpeta:
 
 ```bash
 git fetch origin
-git switch project2/kubernetes
-git pull --ff-only origin project2/kubernetes
+git switch main
+git pull --ff-only origin main
 git branch --show-current
 python3 --version
 ```
@@ -26,11 +26,11 @@ python3 --version
 Si todavía no está clonado en la VM:
 
 ```bash
-git clone --branch project2/kubernetes https://github.com/Hector1527/Proyecto_Virtualizaci-n.git proyecto_2_glitch-tec
+git clone https://github.com/TaTan09/proyecto_2_glitch-tec.git
 cd proyecto_2_glitch-tec
 ```
 
-Equipo: **Glitch Tec**. ID confirmado: **`glitch-tec`**. Namespace: **`proyecto-2-glitch-tec`**. Repositorio final previsto: **`proyecto_2_glitch-tec`**. El traslado al futuro repositorio se hace posteriormente, sin cambiar main.
+Equipo: **Glitch Tec**. ID confirmado: **`glitch-tec`**. Namespace: **`proyecto-2-glitch-tec`**. Repositorio final: **[TaTan09/proyecto_2_glitch-tec](https://github.com/TaTan09/proyecto_2_glitch-tec)**. La rama final de entrega y despliegue es **`main`**. Se conservan las imágenes `javierini/elquetzal-*:2.0` publicadas por el equipo.
 
 ## 2. Configuración final y herramientas
 

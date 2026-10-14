@@ -1,10 +1,10 @@
 # Informe de implementación del Proyecto 2
 
-Estado final: equipo **Glitch Tec**, ID confirmado **`glitch-tec`**, namespace **`proyecto-2-glitch-tec`**, repositorio final previsto **`proyecto_2_glitch-tec`**. Los 22 manifiestos versionados en `k8s/` se despliegan directamente. Las siete imágenes `javierini/elquetzal-*:2.0` fueron publicadas según confirmación del equipo; esta etapa no las reconstruye ni modifica. Los apartados 2 y 3 describen la migración inicial; la lista exacta de esta finalización se incluye al final.
+Estado final: equipo **Glitch Tec**, ID confirmado **`glitch-tec`**, namespace **`proyecto-2-glitch-tec`**, repositorio final **[TaTan09/proyecto_2_glitch-tec](https://github.com/TaTan09/proyecto_2_glitch-tec)** y rama de entrega **`main`**. Los 22 manifiestos versionados en `k8s/` se despliegan directamente. Las siete imágenes `javierini/elquetzal-*:2.0` fueron publicadas según confirmación del equipo y se conservan. Los apartados 2 y 3 describen la migración inicial; la sección «Finalización con idEquipo confirmado» documenta la etapa incorporada en `ec3f77e`.
 
 ## 1. Rama utilizada
 
-`project2/kubernetes`, creada desde el estado de `main` en `2e3d9baf557ea3c0f9fda9fbccb56c949dfbd884`. Repositorio existente `Hector1527/Proyecto_Virtualizaci-n`; no se creó otro repositorio ni se hizo merge. La referencia `main` se conserva.
+La rama final de entrega y despliegue es **`main`** de **`TaTan09/proyecto_2_glitch-tec`**. El repositorio final incorporó exactamente el commit `ec3f77e` de la implementación Kubernetes antes de esta limpieza documental. La migración inicial partió del código del Proyecto 1 en el commit `2e3d9baf557ea3c0f9fda9fbccb56c949dfbd884`.
 
 ## 2. Archivos nuevos
 
@@ -113,7 +113,7 @@ Integrantes: Mario Arévalo 1072123, Jonatán Chávez 1185023, Javier Ruano 1207
 - Las siete imágenes `:2.0` están publicadas según el equipo; no requieren reconstrucción ni modificación.
 - Crear usuarios/passwords privados para la instalación; la plantilla está vacía y el Secret permanece fuera del repositorio.
 - Obtener IP real y acceso a la VM por los responsables; no hay valores inventados.
-- Mover después al repositorio `proyecto_2_glitch-tec` cuando el equipo lo acuerde, sin crear otro ahora.
+- El repositorio final ya es `TaTan09/proyecto_2_glitch-tec`; la entrega y el despliegue utilizan su rama `main`.
 - Tras reunir capturas reales, exportar el PDF final de evidencias A-F exigido por el docente. No se fabricó un PDF con supuestas evidencias.
 
 ## 9. Pruebas ejecutadas
@@ -213,7 +213,7 @@ scripts/validate-manifests.sh
 - **Correcto:** formato del diff comprobado con `git diff --check`.
 - **Falló por entorno:** `kubectl --request-timeout=5s apply --dry-run=client -R -f k8s` intentado contra el contexto local; la API `kubernetes.docker.internal:6443` no está disponible. Debe repetirse en la VM. No se oculta ese resultado ni se afirma un despliegue real.
 
-La rama de entrega sigue siendo `project2/kubernetes`; no se hace merge ni se modifica `main`. La publicación de las siete imágenes está confirmada por el equipo y no se volvió a ejecutar desde esta etapa.
+La implementación de esta etapa quedó incorporada en el commit `ec3f77e` del repositorio final `TaTan09/proyecto_2_glitch-tec`. La rama final de entrega y despliegue es `main`. La publicación de las siete imágenes está confirmada por el equipo y se conserva sin reconstruirlas ni volver a publicarlas.
 
 ## PENDIENTE ÚNICAMENTE EN LA VM
 

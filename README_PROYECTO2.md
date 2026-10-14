@@ -2,7 +2,7 @@
 
 Migración de la aplicación del Proyecto 1 a la VM Ubuntu Server con k3s. Se conservan los cinco microservicios Flask, Vue, PostgreSQL 16, las tres bases y los contratos HTTP. La demostración del Proyecto 2 se ejecuta exclusivamente con Kubernetes.
 
-Rama: `project2/kubernetes`, basada en `main` commit `2e3d9baf557ea3c0f9fda9fbccb56c949dfbd884`. No se hace merge a `main` ni se crea otro repositorio. `docker-compose.yml` y `docker-compose.dev.yml` permanecen como referencia del Proyecto 1. El gateway de esta rama está adaptado a Kubernetes; el Compose histórico necesita su configuración original para volver a ejecutar el Proyecto 1.
+Repositorio final: **[TaTan09/proyecto_2_glitch-tec](https://github.com/TaTan09/proyecto_2_glitch-tec)**. **`main` es la rama final de entrega y despliegue**, con la implementación Kubernetes incorporada en el commit `ec3f77e`. `docker-compose.yml` y `docker-compose.dev.yml` permanecen como referencia del Proyecto 1. El gateway está adaptado a Kubernetes; el Compose histórico necesita su configuración original para volver a ejecutar el Proyecto 1.
 
 ## Equipo y nomenclatura
 
@@ -19,7 +19,7 @@ Grupo **Glitch Tec**:
 
 Los registros se siembran en `clientes_db`; el Dashboard obtiene los nombres y carnés con `GET /api/clientes`. No simula los nombres cuando el backend falla. Advierte si falta alguno de los seis registros.
 
-El equipo confirmó el **idEquipo `glitch-tec`**. El namespace Kubernetes final es **`proyecto-2-glitch-tec`** y el repositorio final previsto es **`proyecto_2_glitch-tec`**. Por ahora se conserva el repositorio existente y la rama `project2/kubernetes`.
+El equipo **Glitch Tec** confirmó el **idEquipo `glitch-tec`**. El namespace Kubernetes final es **`proyecto-2-glitch-tec`** y el repositorio final es **`TaTan09/proyecto_2_glitch-tec`**, en la rama **`main`**.
 
 El enunciado usa guiones bajos para carpeta y repositorio; Kubernetes requiere nombres DNS sin `_`, por lo que el namespace usa guiones. Los recursos, labels `team` y hostnames de los Pods ya tienen `glitch-tec`. Los 22 manifiestos finales versionados en **`k8s/` son directamente desplegables**; no requieren sustituciones ni una carpeta generada.
 

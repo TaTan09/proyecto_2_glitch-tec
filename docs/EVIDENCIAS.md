@@ -1,6 +1,6 @@
 # Evidencias del Proyecto 2
 
-Equipo **Glitch Tec**, ID `glitch-tec`, namespace `proyecto-2-glitch-tec`, repositorio final previsto `proyecto_2_glitch-tec`. Las siete imágenes `:2.0` están publicadas según confirmación del equipo; las capturas y pruebas de VM/k3s siguen pendientes. Cada captura debe indicar qué se hace, el comando, resultado real y qué criterio acredita. Mantener reloj del sistema y carné identificable en todas las capturas pertinentes. No mostrar passwords, tokens, kubeconfig ni YAML/JSON del Secret. Preparar al final un PDF con estas seis secciones exactamente A-F.
+Equipo **Glitch Tec**, ID `glitch-tec`, namespace `proyecto-2-glitch-tec`, repositorio final **[TaTan09/proyecto_2_glitch-tec](https://github.com/TaTan09/proyecto_2_glitch-tec)**, rama final de entrega `main`. Las siete imágenes `javierini/elquetzal-*:2.0` están publicadas según confirmación del equipo; las capturas y pruebas de VM/k3s siguen pendientes. Cada captura debe indicar qué se hace, el comando, resultado real y qué criterio acredita. Mantener reloj del sistema y carné identificable en todas las capturas pertinentes. No mostrar passwords, tokens, kubeconfig ni YAML/JSON del Secret. Preparar al final un PDF con estas seis secciones exactamente A-F.
 
 ## A
 
